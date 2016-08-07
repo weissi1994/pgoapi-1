@@ -183,3 +183,4 @@ def d2h(f):
     hex_str = f2h(f)[2:].replace('L','')
     hex_str = ("0" * (len(hex_str) % 2)) + hex_str
     return unhexlify(hex_str)
+#    return hex(struct.unpack('<Q', struct.pack('<d', f))[0])[2:].replace(' ', '').decode("hex")
